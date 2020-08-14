@@ -1,6 +1,6 @@
 import React, { StrictMode } from "react";
 import ReactDOM from "react-dom";
-import "./styles/style.scss";
+import "@/assets/styles/style.scss"; 
 
 function App() {
   return (
