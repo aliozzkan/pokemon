@@ -26,6 +26,14 @@ module.exports = {
         exclude: /node_modules/,
         loaders: ['eslint-loader'],
       },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[path][name].[ext]',
+          outputPath: './src/assets',
+        },
+      },
     ],
   },
   devtool: 'cheap-module-eval-source-map',

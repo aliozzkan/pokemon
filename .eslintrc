@@ -19,6 +19,7 @@
     "prettier/prettier": ["warn"],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-unused-vars": "warn",
+    "no-extra-boolean-cast": "off",
     "import/prefer-default-export": "off",
     "react/self-closing-comp": "off",
     "react/jsx-props-no-spreading": "off",
