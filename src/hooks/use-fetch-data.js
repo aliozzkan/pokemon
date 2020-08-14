@@ -9,7 +9,7 @@ const initialValue = {
   isFulfilled: false,
 };
 
-export const createFetchData = () => {
+const createFetchData = () => {
   const freeData = initialValue;
   return freeData;
 };
