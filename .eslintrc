@@ -20,7 +20,9 @@
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-unused-vars": "warn",
     "import/prefer-default-export": "off",
-    "react/self-closing-comp": "off"
+    "react/self-closing-comp": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/no-array-index-key": "off"
   },
   "settings": {
     "import/resolver": {
