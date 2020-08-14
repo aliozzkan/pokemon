@@ -1,0 +1,49 @@
+.grid-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, calc(calc(100% - 10%) / 3));
+  column-gap: 5%;
+  row-gap: 50px;
+
+  @media screen and (max-width: $sm) and (min-width: $xs) {
+    grid-template-columns: repeat(2, calc(calc(100% - 5%) / 2));
+    column-gap: 5%;
+    row-gap: 30px;
+  }
+  @media screen and (max-width: $xs) {
+    grid-template-columns: 100%;
+    column-gap: 0;
+    row-gap: 30px;
+  }
+}
+
+.card {
+  background: $white;
+  border: 1px solid $black;
+  border-radius: 5px;
+  height: 200px;
+  cursor: pointer;
+  transition: $animation;
+
+  &:hover {
+    background: $grey;
+  }
+
+  &:active {
+    background: $light-grey;
+  }
+}
+
+.logo {
+  background: $red;
+  width: 200px;
+  height: 100px;
+  border: 1px solid $black;
+  margin: auto;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.input {
+  border: 1px solid $black;
+  border-radius: $radius;
+}

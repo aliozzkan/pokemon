@@ -5,6 +5,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch } from 'react-router-dom';
 import { routers } from '@/router';
 
+import '@/assets/styles/plugins/normalize.css';
 import '@/assets/styles/style.scss';
 
 function App() {

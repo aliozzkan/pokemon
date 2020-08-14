@@ -1,9 +1,20 @@
 import React from 'react';
+import { Container } from './partials';
 
 function Home() {
   return (
     <div>
-      <h1>Home</h1>
+      <Container>
+        <div className="logo">Logo</div>
+        <div className="grid-card-container">
+          <div className="card">Card A</div>
+          <div className="card">Card A</div>
+          <div className="card">Card A</div>
+          <div className="card">Card A</div>
+          <div className="card">Card A</div>
+          <div className="card">Card A</div>
+        </div>
+      </Container>
     </div>
   );
 }

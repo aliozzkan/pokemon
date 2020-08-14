@@ -1,0 +1,12 @@
+.container {
+  width: 100%;
+  max-width: $container-width;
+  margin: auto;
+
+  @media screen and (max-width: $sm) {
+    max-width: $container-sm-width;
+  }
+  @media screen and (max-width: $xs) {
+    max-width: $container-xs-width;
+  }
+}
