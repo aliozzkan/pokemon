@@ -5,3 +5,44 @@ $container-xs-width: 300px;
 $animation: 250ms ease all;
 
 $radius: 5px;
+
+.flex {
+  display: flex;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.p-5 {
+  padding: 2em;
+}
+
+.m-5 {
+  margin: 2em;
+}
+.m-3 {
+  margin: 1em;
+}
+
+.unset-link {
+  all: unset;
+  &:visited {
+    all: unset;
+    color: $black;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.mb-1 {
+  margin-bottom: 0.2em;
+}
+.mt-1 {
+  margin-top: 0.2em;
+}
+.ml-1 {
+  margin-left: 0.2em;
+}

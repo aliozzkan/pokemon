@@ -3,7 +3,7 @@ import { useMounted, useFetchData } from '@/hooks';
 import { PokemonListService } from '@/services';
 
 import { Input, ActivityIndicator } from '@/components';
-import { Container, GridCard, Card } from './partials';
+import { Container, GridCard, Card, Logo } from './partials';
 
 function Home() {
   const [pokemons, setPokemons] = useState([]);
@@ -34,9 +34,13 @@ function Home() {
   return (
     <div>
       <Container>
-        <div className="logo">Logo</div>
+        <Logo />
         {pokemonsFetch.isFulfilled ? (
           <>
+            <div className="m-3 text-center">
+              <strong>{cardRows.length}</strong>
+              <span className="ml-1">Pokemon</span>
+            </div>
             <div className="flex justify-center m-5">
               <Input
                 value={searchQuery}
