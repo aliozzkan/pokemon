@@ -16,9 +16,11 @@
 - Don't use 'bootstrap'
 
 # For Run --Dev
+- npm install
 - npm start
 
 # For Build
+- npm install
 - npm run build
 
 <br/>
