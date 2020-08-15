@@ -22,7 +22,7 @@ function App() {
                 roles={route.roles}
                 component={(props) => {
                   return (
-                    <Suspense fallback={<div>Loading</div>}>
+                    <Suspense fallback={<div></div>}>
                       <route.component {...props} />
                     </Suspense>
                   );

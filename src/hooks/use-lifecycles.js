@@ -14,7 +14,7 @@ export function useMounted(func) {
     };
   });
 }
-export function beforeMount(func) {
+export function useBeforeMount(func) {
   const [_mounted, _setMounted] = useState();
   const [_unMounted, _setUnmounted] = useState();
 

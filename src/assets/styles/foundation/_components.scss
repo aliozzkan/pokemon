@@ -79,3 +79,43 @@
     width: 100px;
   }
 }
+
+.pokemon-detail {
+  background: $white;
+  border: 1px solid $black;
+  max-width: 300px;
+  width: 100%;
+  margin: auto;
+  margin-top: 2em;
+  position: relative;
+  padding: 1em;
+
+  .pokemon-detail-close-button {
+    position: absolute;
+    right: 5%;
+    top: 5%;
+    cursor: pointer;
+  }
+
+  .pokemon-sort-info {
+    text-align: center;
+    margin-top: 2em;
+    img {
+      width: 80px;
+      min-height: 50px;
+    }
+    .pokemon-name {
+      text-transform: capitalize;
+    }
+  }
+
+  .pokemon-long-info {
+    margin-top: 2em;
+    strong {
+      font-weight: 700;
+    }
+    ul {
+      margin-top: .3em;
+    }
+  }
+}
