@@ -9,11 +9,6 @@ const initialValue = {
   isFulfilled: false,
 };
 
-const createFetchData = () => {
-  const freeData = initialValue;
-  return freeData;
-};
-
 // Hook
 export const useFetchData = () => {
   const [_fetchData, _setFetchData] = useState(initialValue);

@@ -1,11 +1,6 @@
 export function createService(apiFunction) {
-  const defaultServiceCallback = {
-    onSuccess: () => {},
-    onError: () => {},
-  };
-
-  return function (mutation, cb) {
-    return async function (apiFunctionData) {
+  return (mutation, cb) => {
+    return async (apiFunctionData) => {
       if (mutation) {
         mutation.pending();
       }
@@ -28,7 +23,6 @@ export function createService(apiFunction) {
         if (cb.onError) {
           cb.onError(error);
         }
-        console.log(error);
         return false;
       }
     };
