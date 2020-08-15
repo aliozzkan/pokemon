@@ -15,7 +15,7 @@ function List() {
       onSuccess: (resp) => {
         setPokemons([...resp.results]);
       },
-    })();
+    })({ jsonData: { offset: 0, limit: 151 } });
   });
 
   const cardRows = [];

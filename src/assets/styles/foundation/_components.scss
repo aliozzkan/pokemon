@@ -89,12 +89,21 @@
   margin-top: 2em;
   position: relative;
   padding: 1em;
+  border-radius: $radius;
 
   .pokemon-detail-close-button {
     position: absolute;
     right: 5%;
     top: 5%;
+    padding: .5em;
     cursor: pointer;
+    border-radius: $radius;
+    transition: $animation;
+    
+    &:hover {
+      background: $grey;
+    }
+    
   }
 
   .pokemon-sort-info {
@@ -116,6 +125,9 @@
     }
     ul {
       margin-top: .3em;
+      li {
+        margin-top: .3em;
+      }
     }
   }
 }
